@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regístrate</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #c3dafa;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-cabecera {
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #84b6f4;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #84b6f4;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <form action="insert.php" method="post">
+            <p class="login-cabecera">Registro de usuario</p>
+
+            <label for="nombre">
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="text" name="nombre" placeholder="Usuario" id="nombre" required>
+            <label for="pw">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" name="pw" placeholder="Contraseña" id="pw" required>
+            <input type="submit" value="Registrarse">
+
+        </form>
+    </div>
+
+</body>
+</html>
